@@ -4,6 +4,11 @@ body, html {
 }
 
 .container {
+  display: grid;
+  grid-template-columns: 300px 900px;
+  grid-template-rows: 100px 100px 500px 100px;
+  gap: 15px;
+
   text-align: center;
   height: 100%;
   padding: 16px;
@@ -20,18 +25,22 @@ body, html {
 }
 
 .header {
+  grid-area: 1 / 1 / 2 / 3;
   background-color: #FFDE22;
 }
 
 .sidebar {
+  grid-area: 2 / 1 / 4 / 2;
   background-color: #FF7755;
 }
 
 .nav {
+  grid-area: 2 / 2 / 3 / 3;
   background-color: #00DDFF;
 }
 
 .article {
+  grid-area: 3 / 2 / 4 / 3;
   background-color: #bccbde;
 }
 
@@ -43,5 +52,6 @@ body, html {
 }
 
 .footer {
+  grid-area: 4 / 1 / 5 / 3;
   background-color: #393f4d;
 }
